@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>Color Changing Buttons</title>
+  <style>
+    button {
+      padding: 20px 50px;
+      font-size: 32px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<center>
+  <button id="redBtn" onmouseover="changeColor('red')" onmouseout="resetColor()">Red</button>
+  <button id="greenBtn" onmouseover="changeColor('green')" onmouseout="resetColor()">Green</button>
+  <button id="blueBtn" onmouseover="changeColor('blue')" onmouseout="resetColor()">Blue</button>
+</center>
+  <script>
+    function changeColor(color) {
+      document.body.style.backgroundColor = color;
+    }
+    function resetColor() {
+      document.body.style.backgroundColor = "";
+    }
+  </script>
+</body>
+</html>
