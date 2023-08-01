@@ -1,0 +1,47 @@
+<html>
+<head><title>Mathematical Operations</title>
+
+<script>
+function y()
+{
+var num1=parseFloat(window.prompt("Enter the first value: "));
+var num2=parseFloat(window.prompt("Enter the second value: "));
+var op=window.prompt("Enter the symbol of the desired operation: ");
+
+if(op=="+")
+{
+   document.write("The addition is: ",(num1+num2));
+}
+
+else if(op=="-")
+{
+   document.write("The substraction is: ",(num1-num2));
+}
+
+else if(op=="*")
+{
+   document.write("The multiplication is: ",(num1*num2));
+}
+
+else if(op=="/")
+{
+   document.write("The division is: ",(num1/num2));
+}
+
+else
+{
+   document.write("You have entered an invalid character!");
+}
+}
+</script>
+
+</head>
+<body>
+
+
+<form name="bbsdf">
+<input type="button" name="goog" value="calculator" onClick="y()">
+</form>
+
+</body>
+</html>
